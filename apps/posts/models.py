@@ -55,6 +55,7 @@ class Post(models.Model):
     content = RichTextUploadingField()
     posted_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
+    review_item = models.TextField(blank=True, null=True)
 
     class Meta:
         ordering = ['posted_date', 'category', 'author']
