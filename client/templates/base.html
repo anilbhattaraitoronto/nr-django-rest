@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='stylesheet' href='{% static "global.css" %}'>
+    <link rel='stylesheet' href='{% static "build/bundle.css" %}'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <!-- <title>{% block title %}{% endblock title %} | Nepal Reviewed</title> -->
+</head>
+<body class="has-navbar-fixed-top">
+    <!-- BEGIN app-wrapper -->
+    
+        <!-- BEGIN main header -->
+    <!-- <header id="main-header" class=" container navbar px-3 my-3">
+        <nav class="navbar">
+             <a href="{% url 'frontpage' %}" class="button is-link">Home</a>
+        {% if request.user.is_authenticated and request.user.is_staff %}
+        <a href="{% url 'admin:index' %}" class="button is-link">Admin</a>
+        {% endif %}
+        </nav>
+       
+    </header> -->
+    <!-- END main header -->
+    <!-- BEGIN content block -->
+    {% block content %}
+    {% endblock content %}
+    <!-- END content block  -->
+    <footer>
+        <p>&copy; Nepal Reviewed 2020 - Present. All Rights Reserved.</p>
+    </footer>
+
+    <!-- END app-wrapper -->
+    <!-- BEGIN -Script block -->
+    {% block script %}
+    {% endblock script %}
+    <!-- END script block  -->
+</body>
+</html>

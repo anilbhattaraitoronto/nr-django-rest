@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+<!-- {% block title %} Welcome {% endblock title  %} -->
+
+{% block content %}
+<main id="main-app"></main>
+
+{% endblock content %}
+{% block script %}
+<script src="{% static 'build/bundle.js' %}" ></script>
+{% endblock script %}

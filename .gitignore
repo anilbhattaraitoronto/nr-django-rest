@@ -1,0 +1,10 @@
+/client/node_modules/
+/client/public/build/
+db.sqlite3
+venv/
+static/
+media/
+local_settings.py
+__pycache__/
+
+.DS_Store

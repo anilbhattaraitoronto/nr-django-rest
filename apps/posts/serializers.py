@@ -1,0 +1,9 @@
+from rest_framework import serializers, permissions
+from .models import Post
+
+
+class PostSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Post
+        fields = '__all__'
+        depth = 1
