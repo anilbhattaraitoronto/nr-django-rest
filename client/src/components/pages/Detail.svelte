@@ -36,5 +36,13 @@
         <h2 class="title">{$postDetail.title}</h2>
         <h2 class="has-text-black">{$postDetail.author}</h2>
         {@html $postDetail.content}
+        <p>
+            Topics:
+            {#each $postDetail.topics as topic}
+                <a
+                    href="#/topicposts/{topic.name}"
+                    class="button">{topic.name}</a>
+            {/each}
+        </p>
     </div>
 {/if}

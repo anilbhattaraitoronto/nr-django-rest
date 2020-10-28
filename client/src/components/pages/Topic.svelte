@@ -51,16 +51,17 @@
                         <h4 class="has-text-weight-bold has-text-black">
                             {post.author}
                         </h4>
+                        <p>
+                            <span
+                                class="button is-small is-link is-outlined">Topics:
+                            </span>
 
-                        {#each post.topics as topic}
-                            <p>
-                                <span
-                                    class="button is-small is-link is-outlined">Topics:
-                                </span>
+                            {#each post.topics as topic}
                                 <a
-                                    href="#/topicposts/{topic.name}">{topic.name}</a>
-                            </p>
-                        {/each}
+                                    href="#/topicposts/{topic.name}"
+                                    class="button">{topic.name}</a>
+                            {/each}
+                        </p>
                         <p class="card-content has-text-right">
                             <a
                                 href="#/{post.id}/{post.category}/{post.slug}"

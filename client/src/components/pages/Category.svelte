@@ -49,15 +49,17 @@
                             {post.author}
                         </h4>
 
-                        {#each post.topics as topic}
-                            <p>
-                                <span
-                                    class="button is-small is-link is-outlined">Topics:
-                                </span>
+                        <p>
+                            <span
+                                class="button is-small is-link is-outlined">Topics:
+                            </span>
+
+                            {#each post.topics as topic}
                                 <a
-                                    href="#/topicposts/{topic.name}">{topic.name}</a>
-                            </p>
-                        {/each}
+                                    href="#/topicposts/{topic.name}"
+                                    class="button">{topic.name}</a>
+                            {/each}
+                        </p>
                         <p class="card-content has-text-right">
                             <a
                                 href="#/{post.id}/{post.category}/{post.slug}"
