@@ -34,14 +34,14 @@
                 class="has-text-black is-capitalized">{$postDetail.category}</a>
         </h3>
         <h2 class="title">{$postDetail.title}</h2>
-        <h2 class="has-text-black">{$postDetail.author}</h2>
+        <h3 class="pb-4 has-text-black has-text-weight-bold">
+            {$postDetail.author}
+        </h3>
         {@html $postDetail.content}
         <p>
-            Topics:
+            <span class="button is-small is-warning">Topics: </span>
             {#each $postDetail.topics as topic}
-                <a
-                    href="#/topicposts/{topic.name}"
-                    class="button">{topic.name}</a>
+                <a href="#/topicposts/{topic.name}">{topic.name} | </a>
             {/each}
         </p>
     </div>

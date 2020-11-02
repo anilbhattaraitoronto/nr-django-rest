@@ -60,8 +60,11 @@
                         <h4 class="has-text-weight-bold has-text-black pb-4">
                             {post.author}
                         </h4>
+
+                        <p class="has-text-grey is-italic">{post.summary}</p>
+
                         <p>
-                            <span class="button is-small is-link">Topics:
+                            <span class="button is-small is-warning">Topics:
                             </span>
 
                             {#each post.topics as topic}

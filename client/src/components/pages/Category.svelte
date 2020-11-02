@@ -43,21 +43,22 @@
                         <h3 class="title">
                             <a
                                 href="#/{post.id}/{post.category}/{post.slug}"
-                                class="has-text-weight-bold is-link is-size-3">{post.title}</a>
+                                class="has-text-grey  is-size-3">{post.title}</a>
                         </h3>
-                        <h4 class="has-text-weight-bold has-text-black">
+                        <h4 class="pb-4 has-text-weight-bold has-text-black">
                             {post.author}
                         </h4>
-
+                        <p class="has-text-grey is-italic">{post.summary}</p>
                         <p>
-                            <span
-                                class="button is-small is-link is-outlined">Topics:
+                            <span class="button is-small is-warning">Topics:
                             </span>
 
                             {#each post.topics as topic}
                                 <a
                                     href="#/topicposts/{topic.name}"
-                                    class="button">{topic.name}</a>
+                                    class="">{topic.name}
+                                    |
+                                </a>
                             {/each}
                         </p>
                         <p class="card-content has-text-right">
