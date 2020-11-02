@@ -8,10 +8,24 @@
 <svelte:head>
     <title>Welcome | Nepal Reviewed</title>
 </svelte:head>
+<div class="hero  m-0 has-background-warning">
+    <div class="hero-body ">
+        <h1 class="title is-1">Welcome to NR</h1>
+        <h2 class="subtitle is-4 has-text-italicized">
+            Simplying academic works on Nepal
+        </h2>
+        <p class="p-2 has-text-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            ad commodi, eum et iusto obcaecati similique hic est tempore cum,
+            eius ducimus provident iure blanditiis voluptates nemo. Cum, enim
+            impedit.
+        </p>
+    </div>
+</div>
 
 {#if $newPosts.length > 0}
     <h2 class="title is-3">Latest</h2>
-    <div class="container columns m-0">
+    <div class="container columns m-0 p-0">
         {#each $newPosts as post}
             <div class=" column is-half mb-2">
                 <div class="card">
@@ -38,20 +52,21 @@
                         <h3 class="title">
                             <a
                                 href="#/{post.id}/{post.category}/{post.slug}"
-                                class="has-text-weight-bold is-link is-size-3">{post.title}</a>
+                                class="has-text-weight-bold has-text-dark is-size-3">{post.title}</a>
                         </h3>
-                        <h4 class="has-text-weight-bold has-text-black">
+                        <h4 class="has-text-weight-bold has-text-black pb-4">
                             {post.author}
                         </h4>
                         <p>
-                            <span
-                                class="button is-small is-link is-outlined">Topics:
+                            <span class="button is-small is-link">Topics:
                             </span>
 
                             {#each post.topics as topic}
                                 <a
                                     href="#/topicposts/{topic.name}"
-                                    class="button">{topic.name}</a>
+                                    class="">{topic.name}
+                                    |
+                                </a>
                             {/each}
                         </p>
                         <p class="card-content has-text-right">

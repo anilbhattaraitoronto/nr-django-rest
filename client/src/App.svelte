@@ -127,11 +127,8 @@
     }
 </script>
 
-<svelte:head>
-    <title>Welcome</title>
-</svelte:head>
-<main class="section container p-0 ">
-    <nav class="navbar is-info px-3 mx-0 is-fixed-top">
+<main class=" section container p-0 ">
+    <nav class=" navbar is-warning px-3 mx-0 is-fixed-top">
         <div class="navbar-brand">
             <a href="#/" class="navbar-item">Home</a>
             <a href="#/about" class="navbar-item">About</a>
@@ -152,7 +149,7 @@
                             <a
                                 href="#/categoryposts/{category.slug}"
                                 on:click={() => getCategoryPosts(category.slug)}
-                                class="navbar-item p-0 button is-info mt-1 has-text-centered">{category.name}</a>
+                                class="navbar-item p-0 button is-warning mt-1 has-text-centered">{category.name}</a>
                         {/each}
                     </div>
                 </div>
@@ -163,31 +160,27 @@
                             <a
                                 href="#/topicposts/{topic.slug}"
                                 on:click={() => getTopicPosts(topic.slug)}
-                                class="navbar-item p-0 button is-info mt-1 has-text-centered">{topic.name}</a>
+                                class="navbar-item p-0 button is-warning mt-1 has-text-centered">{topic.name}</a>
                         {/each}
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="hero mt-3">
-        <div class="hero-body has-background-info">
-            <h1 class="title is-1">Welcome to NR</h1>
-        </div>
-    </div>
-    <div class="section columns">
+
+    <div class="section columns pt-6">
         <div class="column">
             <Router {routes} />
         </div>
         <div class="column is-one-quarter">
             <h2 class="title">Recent</h2>
-            <div class="container">
+            <div class="p-0 m-0">
                 {#each $postTitles as item}
-                    <p>
-                        <a
-                            href="#/{item.id}/{item.category}/{item.slug}"
-                            on:click={() => getPostDetail(item.id)}>{item.title}</a>
-                    </p>
+                    <a
+                        href="#/{item.id}/{item.category}/{item.slug}"
+                        on:click={() => getPostDetail(item.id)}
+                        class=" has-text-link-dark">{item.title}</a>
+
                     <hr />
                 {/each}
             </div>
