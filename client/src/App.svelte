@@ -128,7 +128,7 @@
 </script>
 
 <main class=" section container p-0 ">
-    <nav class=" navbar is-warning px-3 mx-0 is-fixed-top">
+    <nav class=" navbar is-success px-3 mx-0 is-fixed-top">
         <div class="navbar-brand">
             <a href="#/" class="navbar-item">Home</a>
             <a href="#/about" class="navbar-item">About</a>
@@ -149,7 +149,7 @@
                             <a
                                 href="#/categoryposts/{category.slug}"
                                 on:click={() => getCategoryPosts(category.slug)}
-                                class="navbar-item p-0 button is-warning mt-1 has-text-centered">{category.name}</a>
+                                class="navbar-item p-0 button is-success mt-1 has-text-centered">{category.name}</a>
                         {/each}
                     </div>
                 </div>
@@ -160,7 +160,7 @@
                             <a
                                 href="#/topicposts/{topic.slug}"
                                 on:click={() => getTopicPosts(topic.slug)}
-                                class="navbar-item p-0 button is-warning mt-1 has-text-centered">{topic.name}</a>
+                                class="navbar-item p-0 button is-success mt-1 has-text-centered">{topic.name}</a>
                         {/each}
                     </div>
                 </div>

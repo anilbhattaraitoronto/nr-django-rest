@@ -8,7 +8,7 @@
 <svelte:head>
     <title>Welcome | Nepal Reviewed</title>
 </svelte:head>
-<div class="hero mb-3 has-background-warning">
+<div class="hero mb-3 has-background-success">
     <div class="hero-body ">
         <h1 class="title is-4 has-text-info-dark is-uppercase">
             Nepal Reviewed
