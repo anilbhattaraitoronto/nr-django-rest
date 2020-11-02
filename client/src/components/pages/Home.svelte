@@ -8,18 +8,18 @@
 <svelte:head>
     <title>Welcome | Nepal Reviewed</title>
 </svelte:head>
-<div class="hero  m-0 has-background-warning">
+<div class="hero mb-3 has-background-warning">
     <div class="hero-body ">
-        <h1 class="title is-1">Welcome to NR</h1>
-        <h2 class="subtitle is-4 has-text-italicized">
-            Simplying academic works on Nepal
+        <h1 class="title is-3 has-text-info-dark">Nepal Reviewed</h1>
+        <h2 class="subtitle is-6 is-italic has-text-grey">
+            Simplifying academic works on Nepal
         </h2>
-        <p class="p-2 has-text-info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            ad commodi, eum et iusto obcaecati similique hic est tempore cum,
-            eius ducimus provident iure blanditiis voluptates nemo. Cum, enim
-            impedit.
+        <p class="py-2 has-text-info">
+            We combine academic rigor and journalistic simplicity to produce
+            knowledge for everyone so that everyone are better informed about
+            the complex and dynamic reality in Nepal.
         </p>
+        <p class="py-2 has-text-info">Welcome!</p>
     </div>
 </div>
 
