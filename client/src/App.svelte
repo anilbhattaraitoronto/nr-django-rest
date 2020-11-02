@@ -170,6 +170,11 @@
             </div>
         </div>
     </nav>
+    <div class="hero mt-3">
+        <div class="hero-body has-background-info">
+            <h1 class="title is-1">Welcome to NR</h1>
+        </div>
+    </div>
     <div class="section columns">
         <div class="column">
             <Router {routes} />
