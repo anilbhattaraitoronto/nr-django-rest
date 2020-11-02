@@ -47,6 +47,9 @@
                     {/if}
 
                     <div class="post card-content">
+                        <p class="pb-1 is-size-6 is-italic has-text-grey">
+                            {new Date(post.posted_date).toDateString()}
+                        </p>
                         <h4 class="is-italic is-size-5 has-text-black">
                             <a
                                 href="#/categoryposts/{post.category}"

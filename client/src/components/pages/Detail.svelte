@@ -28,6 +28,9 @@
                 </figure>
             </div>
         {/if}
+        <p class="pb-1 is-size-6 is-italic has-text-grey">
+            {new Date($postDetail.posted_date).toDateString()}
+        </p>
         <h3 class="has-text-black">
             <a
                 href="#/categoryposts/{$postDetail.category}"
