@@ -40,7 +40,10 @@
         <h3 class="pb-4 has-text-black has-text-weight-bold">
             {$postDetail.author}
         </h3>
-        {@html $postDetail.content}
+        <div class="is-size-5">
+            {@html $postDetail.content}
+        </div>
+
         <p>
             <span class="button is-small is-warning">Topics: </span>
             {#each $postDetail.topics as topic}
