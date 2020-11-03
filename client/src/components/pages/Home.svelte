@@ -63,7 +63,13 @@
                             {post.author}
                         </h4>
 
-                        <p class="has-text-grey is-italic">{post.summary}</p>
+                        <p class="has-text-grey is-italic">
+                            {post.summary}
+                            <a
+                                href="#/{post.id}/{post.category}/{post.slug}"
+                                class="has-text-weight-bold is-link">Read full
+                                article</a>
+                        </p>
 
                         <p>
                             <span class="button is-small is-warning">Topics:
@@ -76,12 +82,6 @@
                                     |
                                 </a>
                             {/each}
-                        </p>
-                        <p class="card-content has-text-right">
-                            <a
-                                href="#/{post.id}/{post.category}/{post.slug}"
-                                class="has-text-weight-bold is-link">Read full
-                                article</a>
                         </p>
                     </div>
                 </div>
