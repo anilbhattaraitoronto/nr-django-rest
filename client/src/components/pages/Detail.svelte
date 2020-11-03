@@ -14,7 +14,7 @@
     {/if}
 </svelte:head>
 {#if $postDetail}
-    <div class="post container card p-4 ">
+    <div class="post container card ">
         {#if $postDetail.imageurl}
             <div class="card-image">
                 <figure class="image is-4by3">
@@ -28,27 +28,29 @@
                 </figure>
             </div>
         {/if}
-        <p class="pb-1 is-size-6 is-italic has-text-grey">
-            {new Date($postDetail.posted_date).toDateString()}
-        </p>
-        <h3 class="has-text-black">
-            <a
-                href="#/categoryposts/{$postDetail.category}"
-                class="has-text-black is-capitalized">{$postDetail.category}</a>
-        </h3>
-        <h2 class="title">{$postDetail.title}</h2>
-        <h3 class="pb-4 has-text-black has-text-weight-bold">
-            {$postDetail.author}
-        </h3>
-        <div class="is-size-5">
-            {@html $postDetail.content}
-        </div>
+        <div class="card-content">
+            <p class="pb-1 is-size-6 is-italic has-text-grey">
+                {new Date($postDetail.posted_date).toDateString()}
+            </p>
+            <h3 class="has-text-black">
+                <a
+                    href="#/categoryposts/{$postDetail.category}"
+                    class="has-text-black is-capitalized">{$postDetail.category}</a>
+            </h3>
+            <h2 class="title">{$postDetail.title}</h2>
+            <h3 class="pb-4 has-text-black has-text-weight-bold">
+                {$postDetail.author}
+            </h3>
+            <div class="is-size-5">
+                {@html $postDetail.content}
+            </div>
 
-        <p>
-            <span class="button is-small is-warning">Topics: </span>
-            {#each $postDetail.topics as topic}
-                <a href="#/topicposts/{topic.name}">{topic.name} | </a>
-            {/each}
-        </p>
+            <p>
+                <span class="button is-small is-warning">Topics: </span>
+                {#each $postDetail.topics as topic}
+                    <a href="#/topicposts/{topic.name}">{topic.name} | </a>
+                {/each}
+            </p>
+        </div>
     </div>
 {/if}
