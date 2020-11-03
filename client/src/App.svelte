@@ -168,13 +168,13 @@
         </div>
     </nav>
 
-    <div class="section columns pt-6">
-        <div class="column">
+    <div class="section columns p-0 pt-6">
+        <div class="column p-0 m-0">
             <Router {routes} />
         </div>
-        <div class="column is-one-quarter">
+        <div class="column is-one-quarter p-0 ml-3">
             <h2 class="title">Recent</h2>
-            <div class="p-0 m-0">
+            <div class="p-0 ">
                 {#each $postTitles as item}
                     <a
                         href="#/{item.id}/{item.category}/{item.slug}"

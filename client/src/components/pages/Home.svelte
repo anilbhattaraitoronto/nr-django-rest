@@ -30,7 +30,7 @@
     <div class="container columns m-0 p-0">
         {#each $newPosts as post}
             <div class=" column is-half mb-2">
-                <div class="card">
+                <div class="card p-0 m-0">
                     {#if post.imageurl}
                         <div class="card-image">
                             <figure class="image is-4by3">
