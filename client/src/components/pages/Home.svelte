@@ -29,7 +29,7 @@
     <h2 class="title is-3">Latest</h2>
     <div class="container columns m-0 p-0">
         {#each $newPosts as post}
-            <div class=" column is-half mb-2">
+            <div class=" column is-half mb-2 mr-2 px-0">
                 <div class="card p-0 m-0">
                     {#if post.imageurl}
                         <div class="card-image">
