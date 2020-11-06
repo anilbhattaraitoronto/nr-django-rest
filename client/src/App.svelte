@@ -169,7 +169,7 @@
     </nav>
 
     <div class="section columns p-0 pt-6">
-        <div class="column p-0 m-0">
+        <div class="column p-0 mx-1">
             <Router {routes} />
         </div>
         <div class="column is-one-quarter p-0 ml-3">
