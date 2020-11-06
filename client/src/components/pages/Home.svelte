@@ -8,7 +8,7 @@
 <svelte:head>
     <title>Welcome | Nepal Reviewed</title>
 </svelte:head>
-<div class="hero mb-3 has-background-success">
+<div class="hero mb-3 mx-0 has-background-success">
     <div class="hero-body ">
         <h1 class="title is-4 has-text-info-dark is-uppercase">
             Nepal Reviewed
@@ -27,7 +27,7 @@
 
 {#if $newPosts.length > 0}
     <h2 class="title is-3">Latest</h2>
-    <div class="container columns mr-1 p-0">
+    <div class="container columns  p-3">
         {#each $newPosts as post}
             <div class=" column is-half mb-2 mx-1 px-0">
                 <div class="card p-0 m-0">
