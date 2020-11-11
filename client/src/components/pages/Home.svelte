@@ -9,12 +9,12 @@
     <title>Welcome | Nepal Reviewed</title>
 </svelte:head>
 <main class="section container p-0">
-    <div class="hero has-background-success px-0 mx-0">
+    <div class="hero has-background-success-light px-0 mx-0">
         <div class="hero-body ">
             <h1 class="title is-4 has-text-info-dark is-uppercase">
                 Nepal Reviewed
             </h1>
-            <h2 class="subtitle is-6 is-italic has-text-warning py-2">
+            <h2 class="subtitle is-6 is-italic has-text-success-dark py-2">
                 Simplifying academic works on Nepal
             </h2>
             <p class="py-2 has-text-grey-dark">
