@@ -2,6 +2,8 @@ from django.contrib import admin
 
 from .models import Topic, Post
 
+admin.site.site_header = 'NR Admin'
+
 
 class TopicAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ['name', ], }

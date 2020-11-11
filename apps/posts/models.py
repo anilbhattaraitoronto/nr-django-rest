@@ -36,7 +36,13 @@ class Post(models.Model):
         ('book-reviews', 'Book Reviews'),
         ('commentaries', 'Commentaries'),
     ]
+    LANG_CHOICES = (
+        ('nepali', 'Nepali'),
+        ('english', 'English'),
+    )
 
+    lang = models.CharField(
+        max_length=15, choices=LANG_CHOICES, default='english')
     is_new = models.BooleanField(default=True)
     featured = models.BooleanField(default=False)
     archived = models.BooleanField(default=False)

@@ -128,7 +128,7 @@
 </script>
 
 <main class=" section container p-0 ">
-    <nav class=" navbar is-success px-3 mx-0 is-fixed-top">
+    <nav class=" navbar is-success px-3 is-fixed-top">
         <div class="navbar-brand">
             <a href="#/" class="navbar-item">Home</a>
             <a href="#/about" class="navbar-item">About</a>
@@ -168,11 +168,11 @@
         </div>
     </nav>
 
-    <div class="section columns p-0 pt-6">
-        <div class="column p-0 mx-1">
+    <div class="container columns px-0 m-0">
+        <div class="column is-three-quarters pt-1 px-0">
             <Router {routes} />
         </div>
-        <div class="column is-one-quarter p-0 ml-3">
+        <div class="column m-0">
             <h2 class="title">Recent</h2>
             <div class="p-0 ">
                 {#each $postTitles as item}
