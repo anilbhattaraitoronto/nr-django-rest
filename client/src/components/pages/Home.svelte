@@ -11,7 +11,7 @@
 <main class="section container p-0">
     <div class="hero has-background-success-light px-0 mx-0">
         <div class="hero-body ">
-            <h1 class="title is-3 has-text-info-dark is-uppercase">
+            <h1 class="title is-2 has-text-info-dark is-uppercase py-3">
                 Nepal Reviewed
             </h1>
             <p class="subtitle is-7 is-italic has-text-success-dark py-2">
