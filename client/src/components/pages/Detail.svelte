@@ -44,6 +44,16 @@
             <div class="is-size-5">
                 {@html $postDetail.content}
             </div>
+            {#if $postDetail.review_item}
+                <div class=" has-background-light has-text-grey ">
+                    <p class="has-text-weight-bold p-2">
+                        Review Item:
+                        <span class="is-italic has-text-weight-normal">
+                            {@html $postDetail.review_item}
+                        </span>
+                    </p>
+                </div>
+            {/if}
 
             <p>
                 <span class="button is-small is-warning">Topics: </span>

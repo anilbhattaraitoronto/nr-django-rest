@@ -11,18 +11,13 @@
 <main class="section container p-0">
     <div class="hero has-background-success-light px-0 mx-0">
         <div class="hero-body ">
-            <h1 class="title is-4 has-text-info-dark is-uppercase">
+            <h1 class="title is-3 has-text-info-dark is-uppercase">
                 Nepal Reviewed
             </h1>
-            <h2 class="subtitle is-6 is-italic has-text-success-dark py-2">
-                Simplifying academic works on Nepal
-            </h2>
-            <p class="py-2 has-text-grey-dark">
-                We combine academic rigor and journalistic simplicity to produce
-                knowledge for everyone so that everyone are better informed
-                about the complex and dynamic reality in Nepal.
+            <p class="subtitle is-7 is-italic has-text-success-dark py-2">
+                Combining academic rigor and journalistic simplicity to produce
+                knowledge for everyone
             </p>
-            <p class="py-2 has-text-info">Welcome!</p>
         </div>
     </div>
 
