@@ -23,7 +23,7 @@
 
     {#if $newPosts.length > 0}
         <article class="section container px-0 pt-1">
-            <h2 class="title is-3 pl-3">Latest</h2>
+            <h2 class="title is-3 pl-3 has-text-centered">Latest</h2>
             <div class="container columns is-multiline  ">
                 {#each $newPosts as post}
                     <div class=" column is-half">

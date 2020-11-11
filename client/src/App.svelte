@@ -169,19 +169,21 @@
     </nav>
 
     <div class="container columns px-0 m-0">
-        <div class="column is-three-quarters pt-1 px-0">
+        <div class="column is-three-quarters p-0">
             <Router {routes} />
         </div>
-        <div class="column m-0">
+        <div class="column mx-1 has-background-success-light">
             <h2 class="title">Recent</h2>
             <div class="p-0 ">
                 {#each $postTitles as item}
                     <a
                         href="#/{item.id}/{item.category}/{item.slug}"
                         on:click={() => getPostDetail(item.id)}
-                        class=" has-text-link-dark">{item.title}</a>
+                        class=" has-text-link">{item.title}</a>
 
-                    <hr />
+                    <hr
+                        style="margin:8px auto; "
+                        class="has-background-white" />
                 {/each}
             </div>
         </div>
