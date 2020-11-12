@@ -45,15 +45,14 @@
 
                                 <div class="post card-content">
                                     <p
-                                        class="pb-1 is-size-6 is-italic has-text-grey">
+                                        class="pb-1 is-size-7 is-italic has-text-grey">
                                         {new Date(post.posted_date).toDateString()}
-                                    </p>
-                                    <h4
-                                        class="is-italic is-size-5 has-text-black">
+                                        /
                                         <a
                                             href="#/categoryposts/{post.category}"
-                                            class="has-text-black">{post.category}</a>
-                                    </h4>
+                                            class="has-text-black">#{post.category}</a>
+                                    </p>
+
                                     <h3 class="title">
                                         <a
                                             href="#/{post.id}/{post.category}/{post.slug}"
