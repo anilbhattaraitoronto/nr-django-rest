@@ -87,7 +87,7 @@
                                         <a
                                             href="#/topicposts/{topic.name}"
                                             class=""
-                                            on:click={getTopicPosts(topic.slug)}>{topic.name}
+                                            on:click={() => getTopicPosts(topic.slug)}>{topic.name}
                                             |
                                         </a>
                                     {/each}
