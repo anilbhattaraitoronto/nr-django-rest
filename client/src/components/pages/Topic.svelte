@@ -4,11 +4,20 @@
 
     export let params = {};
 
-    posts.subscribe(async (data) => {
-        $topicPosts = await data.filter((post) =>
-            post.topics.find((topic) => topic.slug == params.topic)
-        );
-    });
+    // posts.subscribe(async (data) => {
+    //     $topicPosts = await data.filter((post) =>
+    //         post.topics.find((topic) => topic.slug == params.topic)
+    //     );
+    // });
+
+    function getTopicPosts(slug = params.topic) {
+        posts.subscribe((data) => {
+            $topicPosts = data.filter((post) =>
+                post.topics.find((topic) => topic.slug == slug)
+            );
+        });
+    }
+    getTopicPosts(params.topic);
 </script>
 
 <svelte:head>
@@ -77,7 +86,8 @@
                                     {#each post.topics as topic}
                                         <a
                                             href="#/topicposts/{topic.name}"
-                                            class="">{topic.name}
+                                            class=""
+                                            on:click={getTopicPosts(topic.slug)}>{topic.name}
                                             |
                                         </a>
                                     {/each}
