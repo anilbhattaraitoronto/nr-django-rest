@@ -31,12 +31,12 @@
         <div class="card-content">
             <p class="pb-1 is-size-6 is-italic has-text-grey">
                 {new Date($postDetail.posted_date).toDateString()}
-            </p>
-            <h3 class="has-text-black">
+                /
                 <a
                     href="#/categoryposts/{$postDetail.category}"
-                    class="has-text-black is-capitalized">{$postDetail.category}</a>
-            </h3>
+                    class="has-text-black">{$postDetail.category}</a>
+            </p>
+
             <h2 class="title">{$postDetail.title}</h2>
             <h3 class="pb-4 has-text-black has-text-weight-bold">
                 {$postDetail.author}
