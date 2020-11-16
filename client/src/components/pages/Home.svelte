@@ -1,5 +1,5 @@
 <script>
-    import { posts, newPosts, postTitles } from "../../stores/postStore.js";
+    import { newPosts } from "../../stores/postStore.js";
     import PostItem from "../shared/PostItem.svelte";
 </script>
 

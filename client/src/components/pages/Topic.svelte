@@ -1,5 +1,5 @@
 <script>
-    import { posts, postTitles, topicPosts } from "../../stores/postStore.js";
+    import { posts, topicPosts } from "../../stores/postStore.js";
     import { push, pop, replace } from "svelte-spa-router";
     import PostItem from "../shared/PostItem.svelte";
     export let params = {};
