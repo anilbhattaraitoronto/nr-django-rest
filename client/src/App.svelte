@@ -1,26 +1,6 @@
-<script>
-    import { onMount } from "svelte";
-    import {
-        posts,
-        postTitles,
-        newPosts,
-        featuredPosts,
-        categoryPosts,
-        topicPosts,
-        postDetail,
-    } from "./stores/postStore.js";
-
-    import Router from "svelte-spa-router";
-    import { wrap } from "svelte-spa-router/wrap";
-
-    import Home from "./components/pages/Home.svelte";
-    import About from "./components/pages/About.svelte";
-    import Category from "./components/pages/Category.svelte";
-    import Detail from "./components/pages/Detail.svelte";
-    import Topic from "./components/pages/Topic.svelte";
-
+<script context="module">
     //categories
-    const categories = [
+    export const categories = [
         {
             name: "Article Reviews",
             slug: "article-reviews",
@@ -34,7 +14,7 @@
             slug: "commentaries",
         },
     ];
-    const topics = [
+    export const topics = [
         {
             name: "Air",
             slug: "air",
@@ -68,6 +48,78 @@
             slug: "sexuality",
         },
     ];
+</script>
+
+<script>
+    import { onMount } from "svelte";
+    import {
+        posts,
+        postTitles,
+        newPosts,
+        featuredPosts,
+        categoryPosts,
+        topicPosts,
+        postDetail,
+    } from "./stores/postStore.js";
+
+    import Router from "svelte-spa-router";
+    import { wrap } from "svelte-spa-router/wrap";
+
+    import Home from "./components/pages/Home.svelte";
+    import About from "./components/pages/About.svelte";
+    import Category from "./components/pages/Category.svelte";
+    import Detail from "./components/pages/Detail.svelte";
+    import Topic from "./components/pages/Topic.svelte";
+
+    //categories
+    // const categories = [
+    //     {
+    //         name: "Article Reviews",
+    //         slug: "article-reviews",
+    //     },
+    //     {
+    //         name: "Book Reviews",
+    //         slug: "book-reviews",
+    //     },
+    //     {
+    //         name: "Commentaries",
+    //         slug: "commentaries",
+    //     },
+    // ];
+    // const topics = [
+    //     {
+    //         name: "Air",
+    //         slug: "air",
+    //     },
+    //     {
+    //         name: "Water",
+    //         slug: "water",
+    //     },
+    //     {
+    //         name: "Food",
+    //         slug: "food",
+    //     },
+    //     {
+    //         name: "Housing",
+    //         slug: "housing",
+    //     },
+    //     {
+    //         name: "Health",
+    //         slug: "health",
+    //     },
+    //     {
+    //         name: "Education",
+    //         slug: "education",
+    //     },
+    //     {
+    //         name: "Transportation",
+    //         slug: "transportation",
+    //     },
+    //     {
+    //         name: "Sexuality",
+    //         slug: "sexuality",
+    //     },
+    // ];
 
     onMount(() => {
         fetch("posts/api/posts/")
