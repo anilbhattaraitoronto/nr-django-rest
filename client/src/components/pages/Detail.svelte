@@ -14,7 +14,7 @@
     {/if}
 </svelte:head>
 {#if $postDetail}
-    <div class=" section post container card ">
+    <div class=" section post container card p-0 ">
         {#if $postDetail.imageurl}
             <div class="card-image">
                 <figure class="image is-4by3">
