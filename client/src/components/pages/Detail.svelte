@@ -34,7 +34,7 @@
                 /
                 <a
                     href="#/categoryposts/{$postDetail.category}"
-                    class="has-text-black">{$postDetail.category}</a>
+                    class="has-text-black">#{$postDetail.category}</a>
             </p>
 
             <h2 class="title">{$postDetail.title}</h2>
